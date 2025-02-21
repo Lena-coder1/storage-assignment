@@ -1,0 +1,91 @@
+:root {
+    --main-color: #92a8d1;
+    --text-color: #034f84;
+    --font-size-large: 70px;
+    --font-size-med: 20px;
+    --font-size-small:15px;
+    --font-family-header: Verdana, Arial, Helvetica, sans-serif;
+    --font-family-par: Georgia, 'Times New Roman', Times, serif;
+}
+
+body
+{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--main-color);
+    margin:0;
+   
+} 
+
+h1
+{
+    font-family: var(--font-family-header);
+    color: var(--text-color);
+    font-size: var(--font-size-large);
+    text-align: center;
+}
+
+label
+{
+    font-family: var(--font-family-par);
+    font-size: var(--font-size-med);
+    font-weight: bold;
+    display: block;
+    text-align: left;
+    margin-right: 5px;
+}
+ p
+ {
+    font-family: var(--font-family-par);
+    font-size: 20px;
+    color: var(--text-color);
+    margin-top: 20px;
+    font-weight: bold;
+ }
+
+.Name
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+#userName
+{ 
+    border-radius: 10px;
+    border: 2px solid black;
+    font-family: var(--font-family-par);
+    font-size: var(--font-size-med);
+    padding: 5px;
+    width: 300px;
+    margin: 5px;
+   
+}
+button {
+    
+    background-color: var(--text-color);
+    color: white;
+    border-color:10px black ;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-family: var(--font-family-par);
+    font-size: var(--font-size-med);
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: var(--text-color);
+}
+
+#display-name {
+    font-family: var(--font-family-par);
+    font-size: 20px;
+    color: var(--text-color);
+    margin-top: 20px;
+    font-weight: bold;
+}
