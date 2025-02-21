@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("Please enter your first and last name.");
         } else {
             displayName.textContent = "Hello, " + Name + "!";
-            localStorage.setItem("userName", Name); 
+            localStorage.setItem("userName", Name); // Save to local storage
         }
     });
 
@@ -25,6 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
     clearButton.addEventListener("click", function () {
         nameInput.value = "";
         displayName.textContent = "";
-        localStorage.removeItem("userName"); 
+        localStorage.removeItem("userName"); // Clear saved name
     });
 });
