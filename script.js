@@ -8,7 +8,13 @@ document.addEventListener("DOMContentLoaded", function () {
    if (localStorage.getItem("Name")) {
     displayName.textContent = localStorage.getItem("Name");
 }
-
+    
+    // print the name on the page 
+document.getElementById("saveBtn").addEventListener("click", function () {
+    let name = document.getElementById("nameInput").value;
+    document.getElementById("displayName").textContent = "Hello, " + name + "!";
+});
+    
 // Save Name Button
 saveButton.addEventListener("click", function () {
     const Name = nameInput.value.trim();
