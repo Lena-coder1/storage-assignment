@@ -79,7 +79,7 @@ button {
 }
 
 button:hover {
-    background-color: var(--text-color);
+    background-color: rgba(128, 128, 128, 0.616);
 }
 
 #display-name {
